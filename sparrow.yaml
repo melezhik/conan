@@ -6,7 +6,7 @@ tasks:
     code: |
       set -e
       cd source
-      python -m tox
+      python3 -m tox
     depends:
       -
         name: install-python
