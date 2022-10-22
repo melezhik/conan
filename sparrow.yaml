@@ -1,0 +1,15 @@
+tasks:
+  - 
+    name: test
+    default: true
+    language: Bash
+    code: |
+      set -e
+      cd source
+      python -m tox
+    depends:
+      -
+        name: install-python
+  -
+   name: install-python
+   plugin: sparkyci-package-python      
