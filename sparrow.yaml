@@ -6,6 +6,7 @@ tasks:
     code: |
       set -e
       cd source
+      pip3 install tox
       python3 -m tox
     depends:
       -
